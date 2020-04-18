@@ -6,7 +6,7 @@ RUN apk update \
   && apk add --no-cache \
     unzip \
     upx \
-  && wget -O snell-server.zip https://github.com/surge-networks/snell/releases/download/2.0.1/snell-server-v2.0.1-linux-amd64.zip \
+  && wget -O snell-server.zip https://github.com/surge-networks/snell/releases/download/v2.0.1/snell-server-v2.0.1-linux-amd64.zip \
   && unzip snell-server.zip \
   && upx --brute snell-server \
   && mv snell-server /usr/local/bin/
